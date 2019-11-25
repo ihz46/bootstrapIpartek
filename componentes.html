@@ -6,6 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
 
+    <!-- Fuente American Captain -->
+    <link rel="stylesheet" href="css/fonts.css">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -164,25 +167,51 @@
                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores nihil dignissimos debitis cum dolorum praesentium repellendus, eius nobis, incidunt minima distinctio reiciendis qui cupiditate! Incidunt tempore quos architecto tempora omnis!
             </div>
         </div>
+        <h2>Ocultar elementos</h2>
+        <div class="d-lg-none">
+            <p>Este texto debe desaparecer en las pantallas menores a large.</p>
+            <img class="border border-primary rounded" src="images/hidden.PNG" alt="imagen de como ocultar elementos dependiendo del tamano de la pantalla">
+
+        </div>
+
+        <h2>Embed</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.dailymotion.com/video/x7o6wd3?playlist=x63ggo"
+                allowfullscreen></iframe>
+        </div>
+
+        <h2>Stretched Link</h2>
+        <p>Nos permite hacer cualquier elemento de HTML clickable.</p>
+        <div class="media position-relative">
+            <img src="images/serrucho.jpg" class="mr-1" style="height:400px; width:800px" alt="Comprar ford sierra rs cosworth">
+            <div class="media-body">
+                <h5 class="mt-0">Ford Sierra rs cosworth</h5>
+                <p>Periodicamente, nos gusta dar una vuelta por el pasado y recordar vehículos que han quedado en los anales de la
+                automoción. Hoy, nos vamos a fijar en el primer Ford Sierra RS Cosworth, un vehículo que se presento en el salon de
+                Ginebra de 1985 y que estuvo a la venta hasta comienzos de 1988.</p>
+                <a href="https://www.milanuncios.com/ford-de-segunda-mano/ford-sierra-rs-cosworth.htm" target="_blank" class="stretched-link">Comprar</a>
+            </div>
+        </div>
+     
 
 
     </main>
 
-    <footer class="bg-primary ">
-        <div class="container p-1 p-sm-3 clearfix">
-            <nav>
-                <ul class="d-flex justify-content-start flex-column flex-column  flex-md-row bd-highlight mb-3 ">
-                    <li class="p-2 bd-highlight"><a href="index.html">Inicio</a></li>
-                    <li class="p-2 bd-highlight"><a href="componentes.html">Componentes</a></li>
-                    <li class="p-2 bd-highlight"><a href="utilidades.html">Utilidades</a></li>
-                    <li class="p-2 bd-highlight"><a href="grid-system.html">Grid System</a></li>
-                </ul>
-    
-                <a class="float-right" href="https://github.com/ihz46" target="_blank">Iñigo Hernández Zárraga <i
-                        class="fab fa-github font-size:2em "></i></a>
-            </nav>
-        </div>
-    </footer>
+        <footer class="bg-primary ">
+            <div class="container p-1 p-sm-3 clearfix">
+                <nav>
+                    <ul class=" p-0 d-flex justify-content-between flex-column flex-sm-row ">
+                        <li class="p-2 bd-highlight"><a href="index.html">Inicio</a></li>
+                        <li class="p-2 bd-highlight"><a href="componentes.html">Componentes</a></li>
+                        <li class="p-2 bd-highlight"><a href="utilidades.html">Utilidades</a></li>
+                        <li class="p-2 bd-highlight"><a href="grid-system.html">Grid System</a></li>
+                    </ul>
+        
+                    <a class="float-right" href="https://github.com/ihz46" target="_blank">Inigo Hernandez Zarraga <i
+                            class="fab fa-github"></i></a>
+                </nav>
+            </div>
+        </footer>
 
 
 

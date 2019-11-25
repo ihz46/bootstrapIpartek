@@ -5,6 +5,10 @@
 
 */
 
+* {
+    font-family: 'AmericanCaptain';
+}
+
 h1,
 h2,
 h3,
@@ -16,7 +20,8 @@ h6 {
     margin: 10px 0px 10px 0px;
 }
 
-ul,ol{
+ul,
+ol {
     list-style: none;
 }
 
@@ -35,10 +40,15 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
+    clear:both;
 }
 
 nav {
     position: sticky;
+}
+
+nav a{ 
+    font-size: 2em;
 }
 
 footer a {
@@ -63,7 +73,7 @@ a:hover {
         content: "Small Devices 576";
     }
 
-   
+
 
 }
 
@@ -85,7 +95,7 @@ a:hover {
         content: "Large Devices 992";
     }
 
-  
+
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -94,5 +104,5 @@ a:hover {
         content: "Extra Large Devices 1200";
     }
 
-    
+
 }
