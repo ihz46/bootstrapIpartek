@@ -15,7 +15,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: teal;
+    color: #007bff;
     text-transform: capitalize;
     margin: 10px 0px 10px 0px;
 }
@@ -23,6 +23,12 @@ h6 {
 ul,
 ol {
     list-style: none;
+}
+
+hr {
+    color: #007bff;
+    border: 2px solid#007bff;
+    margin-bottom: 20px;
 }
 
 main:before {
@@ -37,23 +43,25 @@ main:before {
 }
 
 footer {
+    margin-top: 30px;
     bottom: 0;
     width: 100%;
     text-align: center;
-    clear:both;
+    clear: both;
 }
 
 nav {
     position: sticky;
 }
 
-nav a{ 
+nav a.navbar-brand,
+nav a {
     font-size: 2em;
 }
 
 footer a {
     color: white;
-    font-size: 1.25em
+    font-size: 1.75em
 }
 
 a:hover {
