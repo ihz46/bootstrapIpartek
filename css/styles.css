@@ -1,0 +1,98 @@
+/**
+
+    Fichero de CSS personalizado
+
+
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: teal;
+    text-transform: capitalize;
+    margin: 10px 0px 10px 0px;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+main:before {
+    content: "Mobile First < 576";
+}
+
+.col,
+.col-sm {
+    border: 1px solid rgb(0, 133, 177);
+    background-color: rgb(132, 240, 141);
+    padding: 20px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav {
+    position: sticky;
+}
+
+footer a {
+    color: white;
+    font-size: 1.25em
+}
+
+a:hover {
+    color: #ffc107;
+    text-decoration: none;
+
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px)
+     No media query for `xs` since this is the default in Bootstrap
+
+     Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    main:before {
+        content: "Small Devices 576";
+    }
+
+   
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    main:before {
+        content: "Medium Devices 768";
+    }
+
+
+
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+    main:before {
+        content: "Large Devices 992";
+    }
+
+  
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    main:before {
+        content: "Extra Large Devices 1200";
+    }
+
+    
+}
