@@ -9,6 +9,10 @@
     font-family: 'AmericanCaptain';
 }
 
+p{
+    margin:20px 5px 10px 5px;
+}
+
 h1,
 h2,
 h3,
@@ -70,6 +74,11 @@ a:hover {
 
 }
 
+.row div[class^="col"] {
+    background-color: #DDD;
+    border: 1px solid rgb(0, 133, 177);
+    padding:20px;
+}
 
 
 /* Extra small devices (portrait phones, less than 576px)

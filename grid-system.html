@@ -25,34 +25,61 @@
  
 
     <nav class=" navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html">Inicio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="grid-system.html">Grid System</a> 
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="componentes.html">Componentes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="utilidades.html">Utilidades</a>
-                </li>
-            </ul>
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="grid-system.html">Grid System</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="componentes.html">Componentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="utilidades.html">Utilidades</a>
+                    </li>
+                </ul>
+            </div><!-- collapse .navbar.collapse-->
         </div>
+        <!--Cierro el container-->
+      
     </nav>
 
-
-  
 
     <main class="container">
 
         <h1>Bootstrap 4 - Grid System</h1>
 
-     
+        <hr>
+
+        <div class="row">
+            <div class="column">
+                <p>Bootstrap funciona con un sistema de rejillas de 12 columnas</p>
+                <p>Usa internamente <b>flexbox</b> y es necesario que este dentro de un <span style="color:red">.container</span></p>
+            </div>
+        </div>
+
+        <p>Disponemos de 5 breakpoints 12 columnas</p>
+        
+        <div class="row mb-5">
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+        
+        </div>
         
 
         <p>Dividimos la fila en 3 columnas para todos los breakpoints(dispositivos).</p>
@@ -72,20 +99,79 @@
         <br>
         <p>Dividimos la fila en 3 columnas a partir del breakpoint SM</p>
         
-        <div class="row">
+        <div class="row p-2">
             <div class="col-sm">
-                One of three columns
+                <span class="d-none d-sm-block ">4</span>
+                <span class="d-block d-sm-none">12</span>
             </div>
             <div class="col-sm">
-                One of three columns
+                <span class="d-none d-sm-block ">4</span>
+                <span class="d-block d-sm-none">12</span>
             </div>
             <div class="col-sm">
-                One of three columns
+                <span class="d-none d-sm-block ">4</span>
+                <span class="d-block d-sm-none">12</span>
             </div>
         </div>
-       <p>  </p>
-       <p>  </p>
-       <p>  </p>
+       
+        <p>Disponemos de 5 breakpoints y podemos indicar las pcolumnas que ocupan dependiendo del tamaño.</p>
+
+        <div class="row mb-5">
+            <div class="col-xs-12 col-sm-4 col-lg-6">primera columna</div>
+            <div class="col-xs-12 col-sm-4 col-lg-6">segunda columna</div>
+            <div class="col-xs-12 col-sm-4 col-lg-6">tercera columna</div>
+        </div>
+
+        <h2>Alineacion vertical</h2>
+
+        <hr>
+        <p>Ponemos al <code>div.row</code> un estilo en linea <code>style="min-height: 10rem;</code> para darle una altura minima.</p>
+        <div class="row bg-warning" style="min-height: 10rem;" >
+        <div class="col align-self-start ">Arriba</div>
+        <div class="col align-self-center">Centrado</div>
+        <div class="col align-self-end ">Abajo</div>
+        </div>
+        
+         
+
+       
+        
+
+        <h2>Ordenacion</h2>
+        <hr>
+       <div class="row">
+           <div class="col-4 bg-warning order-lg-5 ">5</div>
+           <div class="col-4 order-lg-1">2</div>
+           <div class="col-4 order-lg-2">3</div>
+           <div class="col-4 order-lg-3">4</div>
+           <div class="col-4 order-lg-4">1</div>
+           <div class="col-4 order-lg-6">6</div>
+        </div>
+       
+        
+        <p>Tenemos 6 divs en 2 columnas para portátiles o PCs, pero en móvil queremos que la quinta sea la primera, con distinto color de fondo</p>
+
+        
+
+        <h2>Offset</h2>
+        <hr>
+        <p>Queremos 3 columnas que ocupen 3 espacios, pero de la 2º a la 3º debe quedar un hueco vacio.</p>
+
+        <div class="row">
+            <div class="col md-3">
+              Primera columna
+            </div>
+            <div class="col md-2 ">
+              Segunda columna
+            </div>
+            <div class="col md-1 offset-md-3">
+              Tercera columna
+            </div>
+        </div>
+
+        </div>
+
+  
   
     </main>
 
