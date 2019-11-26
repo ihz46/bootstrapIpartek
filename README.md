@@ -6,3 +6,5 @@ Tenemos varias páginas que son las siguientes .HTML donde probamos las diferent
 * Grid System
 * Utilidades
 * Themes
+
+![Alt text](https://github.com/ihz46/bootstrapIpartek/blob/master/screenshot.PNG)
